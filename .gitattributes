@@ -2,3 +2,5 @@
 
 # suppress asm/nonmatchings/ in GitHub diffs
 asm/nonmatchings/**/*.s linguist-generated
+
+*.sh text eol=lf
