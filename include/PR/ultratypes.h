@@ -1,7 +1,8 @@
 #ifndef _ULTRATYPES_H_
 #define _ULTRATYPES_H_
 
-
+#include <stddef.h>
+#include <stdint.h>
 /**************************************************************************
  *                                                                        *
  *               Copyright (C) 1995, Silicon Graphics, Inc.               *
@@ -37,22 +38,22 @@
 typedef unsigned char			u8;	/* unsigned  8-bit */
 typedef unsigned short			u16;	/* unsigned 16-bit */
 typedef unsigned long			u32;	/* unsigned 32-bit */
-typedef unsigned long long		u64;	/* unsigned 64-bit */
 
 typedef signed char			s8;	/* signed  8-bit */
 typedef short				s16;	/* signed 16-bit */
 typedef long				s32;	/* signed 32-bit */
-typedef long long			s64;	/* signed 64-bit */
 
-typedef volatile unsigned char		vu8;	/* unsigned  8-bit */
-typedef volatile unsigned short		vu16;	/* unsigned 16-bit */
-typedef volatile unsigned long		vu32;	/* unsigned 32-bit */
-typedef volatile unsigned long long	vu64;	/* unsigned 64-bit */
+typedef signed long long int   s64;
+typedef unsigned long long int u64;
 
-typedef volatile signed char		vs8;	/* signed  8-bit */
-typedef volatile short			vs16;	/* signed 16-bit */
-typedef volatile long			vs32;	/* signed 32-bit */
-typedef volatile long long		vs64;	/* signed 64-bit */
+typedef volatile u8   vu8;
+typedef volatile u16 vu16;
+typedef volatile u32 vu32;
+typedef volatile u64 vu64;
+typedef volatile s8   vs8;
+typedef volatile s16 vs16;
+typedef volatile s32 vs32;
+typedef volatile s64 vs64;
 
 typedef float				f32;	/* single prec floating point */
 typedef double				f64;	/* double prec floating point */
